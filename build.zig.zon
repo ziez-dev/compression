@@ -1,5 +1,6 @@
 .{
-    \.name = .ziez_compression,
+    .fingerprint = 0x36e177ce44058dee,
+    .name = .ziez_compression,
     .version = "0.0.1",
     .minimum_zig_version = "0.16.0",
     .dependencies = .{
