@@ -1,0 +1,16 @@
+.{
+    .name = .@"ziez-compression",
+    .version = "0.1.0",
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .ziez = .{
+            .url = "https://github.com/ziez-dev/ziez/archive/refs/tags/v0.1.0.tar.gz",
+            .hash = "REPLACE_WITH_ZIG_FETCH_HASH",
+        },
+        .brotli = .{
+            .url = "git+https://github.com/google/brotli?ref=master#440e03642b891968a76b6d088d70f01f06e0c349",
+            .hash = "N-V-__8AAI2b6QPVus14oqoaXFGvvUMDwBA0vE-y0XaApMDn",
+        },
+    },
+    .paths = .{ "src", "include", "tests", "build.zig", "build.zig.zon" },
+}
