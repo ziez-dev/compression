@@ -31,7 +31,8 @@ jobs:
           - name: arch
             runner: ubuntu-latest
             container: archlinux/archlinux:latest
-            setup: pacman -Sy --noconfirm glibc base-devel gcc
+            setup: pacman -Sy --noconfirm musl gcc
+            test_cmd: zig build test -Dtarget=native-native-musl --summary all && zig build -Dtarget=native-native-musl
           - name: alpine
             runner: ubuntu-latest
             container: alpine:latest
@@ -61,9 +62,10 @@ jobs:
         run: ${{ matrix.setup }}
 
       - name: Run tests
-        run: zig build test --summary all
+        run: ${{ matrix.test_cmd || 'zig build test --summary all' }}
 
       - name: Build
+        if: matrix.test_cmd == ''
         run: zig build
 
   test-freebsd:
