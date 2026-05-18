@@ -1,12 +1,12 @@
 .{
     .fingerprint = 0x36e177ce44058dee,
     .name = .ziez_compression,
-    .version = "0.0.3",
+    .version = "0.0.4",
     .minimum_zig_version = "0.16.0",
     .dependencies = .{
         .ziez = .{
-            .url = "https://github.com/ziez-dev/ziez/archive/refs/tags/v0.0.3.tar.gz",
-            .hash = "ziez-0.0.3-zH20GkljAwCvLaouSJC9Cyh278v_vNpqT4N9HI-aR6ER",
+            .url = "https://github.com/ziez-dev/ziez/archive/refs/tags/v0.0.4.tar.gz",
+            .hash = "ziez-0.0.4-zH20GkljAwCKaqElKDtJ7zsUYS4bNKGd9XY4K_CCEnjZ",
         },
         .brotli = .{
             .url = "git+https://github.com/google/brotli?ref=master#440e03642b891968a76b6d088d70f01f06e0c349",
