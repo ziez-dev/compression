@@ -5,8 +5,8 @@
     .minimum_zig_version = "0.16.0",
     .dependencies = .{
         .ziez = .{
-            .url = "https://github.com/ziez-dev/ziez/archive/refs/tags/v0.0.1.tar.gz",
-            .hash = "ziez-0.0.1-zH20Gh1jAwADi2a_88hnfVHclInMW1YPLF_y7SS7CJ5Y",
+            .url = "https://github.com/ziez-dev/ziez/archive/refs/tags/v0.0.2.tar.gz",
+            .hash = "ziez-0.0.2-zH20GkljAwBKVh-D-Hq5jOW8OwRYsDQRt5hqkxN674tR",
         },
         .brotli = .{
             .url = "git+https://github.com/google/brotli?ref=master#440e03642b891968a76b6d088d70f01f06e0c349",
